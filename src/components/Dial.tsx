@@ -1,17 +1,26 @@
 import { useState, useContext } from "react";
 import { context } from "../context/mainContext";
-export default function Dial() {
+export default function Dial(props : any) {
   const ctx = useContext(context);
+
   return (
-    <div className="flex relative my-16">
+    <div className="flex sm:w-auto sm:justify-end sm:scale-50 dial-container lg:w-full relative my-16">
       <div className="dial relative rounded-full">
         <div
           className="d-0 dials"
-          onClick={()=>{
-            ctx.setSelected((ctx.selected-1)<0?ctx.products.length-1:ctx.selected-1)
+          onClick={() => {
+            ctx.setSelected(
+              ctx.selected - 1 < 0 ? ctx.products.length - 1 : ctx.selected - 1
+            );
           }}
           style={{
-            backgroundImage: `url(${ctx.products[(ctx.selected-1)<0?ctx.products.length-1:ctx.selected-1].background})`,
+            backgroundImage: `url(${
+              ctx.products[
+                ctx.selected - 1 < 0
+                  ? ctx.products.length - 1
+                  : ctx.selected - 1
+              ].background
+            })`,
           }}
         ></div>
         <div
@@ -22,13 +31,22 @@ export default function Dial() {
         ></div>
         <div
           className="d-2 dials"
-          onClick={()=>{
-            ctx.setSelected((ctx.selected+1)>ctx.products.length-1?0:ctx.selected+1)
+          onClick={() => {
+            ctx.setSelected(
+              ctx.selected + 1 > ctx.products.length - 1 ? 0 : ctx.selected + 1
+            );
           }}
           style={{
-            backgroundImage: `url(${ctx.products[(ctx.selected+1)>ctx.products.length-1?0:ctx.selected+1].background})`,
+            backgroundImage: `url(${
+              ctx.products[
+                ctx.selected + 1 > ctx.products.length - 1
+                  ? 0
+                  : ctx.selected + 1
+              ].background
+            })`,
           }}
         ></div>
+       
       </div>
 
       <div className="img-circle absolute">
@@ -38,3 +56,4 @@ export default function Dial() {
     </div>
   );
 }
+

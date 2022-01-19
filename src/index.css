@@ -7,13 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 .App {
   width: 85vw;
-  height: 98vh;
+  height: calc(100% + 20vh);
   overflow: hidden;
 }
 #counter {
@@ -21,25 +17,25 @@ code {
   height: 8rem;
   font-size: 8rem;
 }
-.bg-dotted{
+.bg-dotted {
   width: 10rem;
   height: 8rem;
   z-index: -1;
-  top:1rem;
-  left:2rem
+  top: 1rem;
+  left: 2rem;
 }
 .img-circle {
-  top:5rem;left:-5rem;
-  width:20rem;
-  height:20rem;
+  top: 5rem;
+  left: -5rem;
+  width: 20rem;
+  height: 20rem;
 }
-.img-circle img{
-  width:15rem;
-  height:15rem;
+.img-circle img {
+  width: 15rem;
+  height: 15rem;
   object-fit: cover;
   object-position: 50% 50%;
-  transition:.5s;
-
+  transition: 0.5s;
 }
 .dial {
   right: -15rem;
@@ -48,82 +44,135 @@ code {
   background: transparent;
   height: 30em;
   width: 30rem;
-  transition:.3s;
+  transition: 0.3s;
 }
 
-.chair-shadow{
-    background-color: rgba(0,0,0,.4);
-    filter: blur(3rem);
-    height:10rem;
-    width:10rem;
-    transform: rotateX(70deg) translateY(28rem) translateX(3rem);
-    z-index: -1;
+.chair-shadow {
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: blur(3rem);
+  height: 10rem;
+  width: 10rem;
+  transform: rotateX(70deg) translateY(28rem) translateX(3rem);
+  z-index: -1;
 }
-.down .line{
-height:20rem;
-width:.2rem;
+.down .line {
+  height: 20rem;
+  width: 0.2rem;
 }
-.btn-1, .btn-2{
-  top:-2rem;
-  left:-1rem;
-  border:2px solid black;
-  
+.btn-1,
+.btn-2 {
+  top: -2rem;
+  left: -1rem;
+  border: 2px solid black;
 }
-.hover-btn{
-  width:1rem;
-  height:1rem;
-  background:rgba(0,0,0,.9);
-  transition:.3s;
+.hover-btn {
+  width: 1rem;
+  height: 1rem;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
 }
-.btn-1:hover .hover-btn, .btn-2:hover .hover-btn{
-  width:2rem;
-  height:2rem;
+.btn-1:hover .hover-btn,
+.btn-2:hover .hover-btn {
+  width: 2rem;
+  height: 2rem;
 }
 
-.dials{
-  width:30px;
-  height:30px;
+.dials {
+  width: 30px;
+  height: 30px;
   background-size: auto 100%;
   border-radius: 50%;
-  position:absolute;
-  transition:.4s;
-  border:2px solid rgba(0,0,0,.8)
+  position: absolute;
+  transition: 0.4s;
+  border: 2px solid rgba(0, 0, 0, 0.8);
 }
-.dials:hover{
-  transform:scale(1.5)
+.dials:hover {
+  transform: scale(1.5);
 }
-.d-0{
-  left:10rem;
-  top:-8px;
+.d-0 {
+  left: 10rem;
+  top: -8px;
 }
-.d-1{
-  left:-25px;
-  top:10rem;
+.d-1 {
+  left: -25px;
+  top: 10rem;
 }
-.d-2{
-  left:6rem;
-  top:26.5rem;
+.d-2 {
+  left: 6rem;
+  top: 26.5rem;
 }
-.active{
-  width:20rem;
-  height:20rem;
-  top:10%;
-  left:-30%;
-  border:none;
-
+.active {
+  width: 20rem;
+  height: 20rem;
+  top: 10%;
+  left: -30%;
+  border: none;
 }
-.active:hover{
-  transform:scale(1);
+.active:hover {
+  transform: scale(1);
   background-size: auto 110%;
+}
+.menubar{
+width: 100vw;
+height: 100vh;
+background-color: #fff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+z-index: 1000 !important;
+}
+.menubar svg{
+  margin:0 1rem;
+}
 
+svg{
+  height:1.5rem;
 }
-.drops:hover div{
-  display:block;
+.sm-hide {
+  display: initial;
 }
-.drops div{
-  z-index: 1000;
-  background:white;
-  top:3rem;
-  width:cover;
-  padding:1rem 0rem 1rem 0;
+.sm-show {
+  display: none;
+}
+.sm-wrap{
+  flex-wrap: nowrap;
+}
+.sm-flex{
+  display: none;
+  width:0;
+  height: 0;
+  overflow: hidden;
+  transition: 4s;
+}
+
+@media screen and (max-width: 640px) {
+  .sm-hide {
+    display: none;
+  }
+  .sm-show {
+    display: initial;
+  }
+  .sm-flex{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    transition: .4s;
+
+  }
+  .sm-wrap{
+    flex-wrap: wrap;
+  }
+  .dial-container {
+    transition: 0.3s;
+    transform: scale(.6);
+  }
+  .App{
+width: 100vw;
+margin:0;
+  }
+  ::-webkit-scrollbar{
+    display: none !important;
+    scrollbar-width: 0 !important;
+
+  }
 }

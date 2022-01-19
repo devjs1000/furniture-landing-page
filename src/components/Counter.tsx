@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
+
 import { context } from "../context/mainContext";
-export default function Counter() {
-  const [theme, setTheme] = useState();
+export default function Counter(props:any) {
   const ctx = useContext(context);
   return (
     <div className="relative">
@@ -31,3 +31,4 @@ export default function Counter() {
     </div>
   );
 }
+
