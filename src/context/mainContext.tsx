@@ -8,17 +8,17 @@ export const context = createContext([] as any);
 export default function MainContext({ children }: { children: any }) {
   const [products, setProducts] = useState([
     {
-      title:'Best Internships',
+      title:'Internships',
       color: "yellow",
       background:barrierBreakingImg
     },
     {
-      title:'Best training',
+      title:'Training',
       color: "gray",
       background:trainingImg
     },
     {
-      title:'Be confident',
+      title:'Capital',
       color: "red",
       background: feelingProudImg
     },

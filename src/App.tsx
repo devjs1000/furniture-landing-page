@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useContext} from "react";
+import {BrowserRouter, Router, Routes} from 'react-router-dom'
 import Counter from "./components/Counter";
 import Dial from "./components/Dial";
 import Menubar from "./components/Menubar";
@@ -6,8 +7,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Card from './components/Card'
 import Comment from './components/Comment'
+import {context} from './context/mainContext'
+import InternshipByLocation from './components/InternshipByLocation'
 function App() {
   const [cardData, setCardData]=useState([])
+  const ctx=useContext(context)
   useEffect(()=>{
     fetch('/src/data/cards.json').then(res=>res.json()).then(data=>{
     setCardData(data)
@@ -20,7 +24,7 @@ function App() {
         <div className="w-full">
           <Counter />
           <div className="px-4 py-2">
-            <h2 className="text-6xl text-gray-400">being</h2>
+            <h2 className="text-6xl text-gray-400">{ctx.products[ctx.selected].title}</h2>
             <h2 className="text-6xl font-semibold text-gray-800">at home</h2>
             <h2 className="text-lg text-gray-400 ">
               Meet your new comfort zone!
@@ -37,7 +41,10 @@ function App() {
       </main>
 <Menubar />
 <div>
-<Card />
+<InternshipByLocation />
+
+
+
 <Comment />
 </div>
 <Footer />

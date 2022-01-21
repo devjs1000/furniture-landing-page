@@ -24,37 +24,16 @@ body {
   top: 1rem;
   left: 2rem;
 }
-.img-circle {
-  top: 5rem;
-  left: -5rem;
-  width: 20rem;
-  height: 20rem;
-}
-.img-circle img {
-  width: 15rem;
-  height: 15rem;
-  object-fit: cover;
-  object-position: 50% 50%;
-  transition: 0.5s;
-}
 .dial {
   right: -15rem;
   top: -3rem;
-  border: 1px solid black;
+  border: .5rem solid  #1f2937;
   background: transparent;
   height: 30em;
   width: 30rem;
   transition: 0.3s;
 }
 
-.chair-shadow {
-  background-color: rgba(0, 0, 0, 0.4);
-  filter: blur(3rem);
-  height: 10rem;
-  width: 10rem;
-  transform: rotateX(70deg) translateY(28rem) translateX(3rem);
-  z-index: -1;
-}
 .down .line {
   height: 20rem;
   width: 0.2rem;
@@ -84,7 +63,7 @@ body {
   border-radius: 50%;
   position: absolute;
   transition: 0.4s;
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 2px solid #1f2937;
   background-color: #1f2937;
 }
 .dials:hover {
@@ -108,12 +87,17 @@ body {
   top: 10%;
   left: -30%;
   border: none;
-  background-size: auto 90%;
 }
-
+.active img{
+  transition: .3s;
+}
 .active:hover {
   transform: scale(1);
-  background-size: auto 110%;
+
+}
+
+.active:hover img {
+  transform: scale(1.1);
 }
 .menubar{
 width: 100vw;
@@ -167,7 +151,7 @@ svg{
   }
   .dial-container {
     transition: 0.3s;
-    transform: scale(.6);
+    transform: scale(1);
   }
   .App{
 width: 100vw;

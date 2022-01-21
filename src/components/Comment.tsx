@@ -4,7 +4,7 @@ import authImg from '../../img/auth.svg'
 export default () => {
   return (
 
-    <div className=" mx-12 md:mx-24 bg-white border-1 rounded shadow-lg m-12 p-12 block sm:flex">
+    <div className=" bg-white border-1 rounded shadow-lg p-8 m-8 block sm:flex">
     		<div className='w-full'>
           <img src={authImg} alt="auth image" className='h-60' />
         </div>
@@ -12,7 +12,9 @@ export default () => {
           <h1 className='text-gray-600 text-2xl mx-2 mt-2'>Add Comment</h1>
           <form action="#" className='flex flex-wrap'>
             <input type="email" className='w-full p-1 px-4 rounded bg-gray-50' placeholder="youremail@email.com" />
-            <textarea name="name" className='my-2 bg-gray-50 resize-none rounded w-full h-40'></textarea>
+            <textarea name="name" className='my-2 bg-gray-50 p-4 text-gray-600 resize-none rounded w-full h-40'>
+              your comment
+            </textarea>
             <button type="submit" name="button" className='w-full rounded bg-indigo-500 py-2 px-4 font-semibold text-white'>
               Comment
             </button>
