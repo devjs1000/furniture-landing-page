@@ -25,10 +25,10 @@ export default function Dial(props : any) {
         ></div>
         <div
           className="d-1 dials active"
-          style={{
-            backgroundImage: `url(${ctx.products[ctx.selected].background})`,
-          }}
-        ></div>
+          
+        >
+        <img src={ctx.products[ctx.selected].background}/>
+        </div>
         <div
           className="d-2 dials"
           onClick={() => {
@@ -46,7 +46,7 @@ export default function Dial(props : any) {
             })`,
           }}
         ></div>
-       
+
       </div>
 
       <div className="img-circle absolute">
@@ -56,4 +56,3 @@ export default function Dial(props : any) {
     </div>
   );
 }
-

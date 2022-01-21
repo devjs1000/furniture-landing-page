@@ -8,7 +8,7 @@ body {
 }
 
 .App {
-  width: 85vw;
+  width: 100%;
   height: calc(100% + 20vh);
   overflow: hidden;
 }
@@ -85,6 +85,7 @@ body {
   position: absolute;
   transition: 0.4s;
   border: 2px solid rgba(0, 0, 0, 0.8);
+  background-color: #1f2937;
 }
 .dials:hover {
   transform: scale(1.5);
@@ -107,7 +108,9 @@ body {
   top: 10%;
   left: -30%;
   border: none;
+  background-size: auto 90%;
 }
+
 .active:hover {
   transform: scale(1);
   background-size: auto 110%;

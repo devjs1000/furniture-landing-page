@@ -5,6 +5,7 @@ import Menubar from "./components/Menubar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Card from './components/Card'
+import Comment from './components/Comment'
 function App() {
   const [cardData, setCardData]=useState([])
   useEffect(()=>{
@@ -13,7 +14,7 @@ function App() {
     })
   },[])
   return (
-    <div className="App shadow py-2 my-3 mx-auto">
+    <div className="App  py-2 my-3 mx-auto">
       <Navbar />
       <main className="flex sm-wrap  m-6">
         <div className="w-full">
@@ -37,6 +38,7 @@ function App() {
 <Menubar />
 <div>
 <Card />
+<Comment />
 </div>
 <Footer />
     </div>

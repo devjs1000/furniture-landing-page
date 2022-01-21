@@ -1,26 +1,26 @@
 import { createContext, useState } from "react";
+import barrierBreakingImg from '../../img/barrierBreaking.svg'
+import trainingImg from '../../img/training.svg'
+import feelingProudImg from '../../img/feelingProud.svg'
 
 export const context = createContext([] as any);
 
 export default function MainContext({ children }: { children: any }) {
   const [products, setProducts] = useState([
     {
-      chair: "https://i.ibb.co/1XM0MJV/ych.png",
+      title:'Best Internships',
       color: "yellow",
-      background:
-        "https://assets-news.housing.com/news/wp-content/uploads/2020/04/22184310/Check-out-these-duplex-interior-design-ideas-FB-1200x700-compressed.jpg",
+      background:barrierBreakingImg
     },
     {
-      chair: "https://i.ibb.co/R3nY3XV/gch.png",
+      title:'Best training',
       color: "gray",
-      background:
-        "https://cdnassets.hw.net/ab/75/a4bc752f41f288d3e45c29454cdb/9b03a91b55f5408980862881d9255102.jpg",
+      background:trainingImg
     },
     {
-      chair: "https://i.ibb.co/Nm82jr3/rch.png",
+      title:'Be confident',
       color: "red",
-      background:
-        "https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/2019/08/26204630/Duplex-House-Design-Living-Room-1024x683.jpg",
+      background: feelingProudImg
     },
   ]);
   const [selected, setSelected] = useState(1);
