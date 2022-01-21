@@ -13,13 +13,13 @@ export default function Navbar() {
       />
       <div className="relative  w-full flex justify-end">
         <button className="text-gray-400 mx-2  hover:text-gray-800 sm-hide">
-          PRODUCTS
+          INTERNSHIP
         </button>
         <button className="text-gray-400 sm-hide mx-2 hover:text-gray-800">
-          HOME DECOR
+        JOBS
         </button>
         <button className="text-gray-400 sm-hide  mx-2 hover:text-gray-800">
-          HOW IT WORKS
+          CONSULTANCY
         </button>
         <button className="text-gray-400 mx-2 sm-show hover:text-gray-800" onClick={()=>{
          ctx.setMenuNav(1)

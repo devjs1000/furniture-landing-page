@@ -1,11 +1,17 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Counter from "./components/Counter";
 import Dial from "./components/Dial";
 import Menubar from "./components/Menubar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import Card from './components/Card'
 function App() {
+  const [cardData, setCardData]=useState([])
+  useEffect(()=>{
+    fetch('/src/data/cards.json').then(res=>res.json()).then(data=>{
+    setCardData(data)
+    })
+  },[])
   return (
     <div className="App shadow py-2 my-3 mx-auto">
       <Navbar />
@@ -23,12 +29,15 @@ function App() {
 
         <div className=" ">
           <div className="w-full"></div>
-          <div className="w-full "> 
+          <div className="w-full ">
             <Dial />
           </div>
         </div>
       </main>
 <Menubar />
+<div>
+<Card />
+</div>
 <Footer />
     </div>
   );
