@@ -9,7 +9,7 @@ import writtingIcon from '../../icons/creative-writting.png'
 
 const Interests=({icon, title})=>{
   return (
-  <div className='mx-2 p-2'>
+  <div className='mx-2 p-2' >
     <a href="#" className='text-center'>
       <img src={icon} className='rounded h-32 mx-auto' alt={title} />
       <button className='w-full my-2 truncate shadow-lg font-semibold bg-indigo-500 text-white py-1 px-2 rounded'>{title}</button>
