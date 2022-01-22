@@ -9,6 +9,8 @@ import Card from './components/Card'
 import Comment from './components/Comment'
 import {context} from './context/mainContext'
 import InternshipByLocation from './components/InternshipByLocation'
+import Trainings from './components/Category'
+import Heading from './components/Heading'
 function App() {
   const [cardData, setCardData]=useState([])
   const ctx=useContext(context)
@@ -41,7 +43,9 @@ function App() {
       </main>
 <Menubar />
 <div>
+<Heading heading='Internships' subHeading='Apply to internships for free' linkText='view all' />
 <InternshipByLocation />
+<Trainings />
 
 
 

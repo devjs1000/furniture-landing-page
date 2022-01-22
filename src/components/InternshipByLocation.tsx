@@ -17,8 +17,8 @@ const JobArea=({icon, title})=>{
 }
 const Jobs = ({}) => {
 return (
-  <div className='flex justify-center bg-indigo-100  p-4 shadow'>
-    <div className='flex rounded bg-white'>
+  <div className='flex justify-center flex bg-indigo-100  p-4 shadow'>
+    <div className='flex flex-wrap justify-center rounded bg-white'>
       <JobArea icon={workFromHomeIcon} title='work from home'/>
       <JobArea icon={bangloreIcon} title='banglore'/>
       <JobArea icon={delhiIcon} title='delhi'/>

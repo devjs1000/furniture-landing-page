@@ -233,7 +233,6 @@ export default function () {
                 ></path>
               </svg>
             </a>
-
           </div>
         </div>
       </div>
