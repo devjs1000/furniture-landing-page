@@ -6,7 +6,7 @@ import Heading from './Heading'
 export default ({}) => {
   return (
     <div>
-    <Heading heading='Internships' subHeading='Apply to internships for free' linkText='view all' />
+    <Heading heading='Capital' subHeading='Get capital support for your idea free' linkText='view all' />
     <div className='text-xl text-gray-800 m-8'>
     Popular Cities
     </div>

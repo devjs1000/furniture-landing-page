@@ -1,26 +1,36 @@
 import React,{useContext, useState} from "react";
 import { context } from "../context/mainContext";
-
+import {Link} from 'react-router-dom'
 export default function Navbar() {
   const ctx=useContext(context)
   return (
     <nav className="flex justify-between mx-2">
+    <Link to='/'>
+
       <img
-        className="h-12 px-2 w-auto object-cover"
+        className="h-12 px-2 m-2 w-auto object-cover"
         src="https://seeklogo.com/images/W/woodland-logo-0EC7F57B3B-seeklogo.com.png"
         alt="brand"
         aria-label="brand"
       />
+      </Link>
+
       <div className="relative  w-full flex justify-end">
+      <Link to='/training'>
         <button className="text-gray-400 mx-2  hover:text-gray-800 sm-hide">
         TRAINING
         </button>
+        </Link>
+        <Link to='/internship'>
         <button className="text-gray-400 sm-hide mx-2 hover:text-gray-800">
         INTERNSHIP
         </button>
+          </Link>
+        <Link to='/capital'>
         <button className="text-gray-400 sm-hide  mx-2 hover:text-gray-800">
         CAPITAL
         </button>
+          </Link>
         <button className="text-gray-400 mx-2 sm-show hover:text-gray-800" onClick={()=>{
          ctx.setMenuNav(1)
         }}>

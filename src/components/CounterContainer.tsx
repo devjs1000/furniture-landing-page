@@ -1,6 +1,10 @@
+import {useContext} from 'react';
 import Counter from './Counter';
+import {context} from '../context/mainContext'
 
 export default ()=>{
+  const ctx=useContext(context)
+
   return (
     <div className="w-full">
       <Counter />
