@@ -7,7 +7,7 @@ import marketingIcon from '../../icons/digital-marketing.png'
 import webDevelopmentIcon from '../../icons/web-development.png'
 import writtingIcon from '../../icons/creative-writting.png'
 
-const Interests=({icon, title})=>{
+const Interests=({icon, title}:{icon:string, title:string})=>{
   return (
   <div className='mx-2 p-2' >
     <a href="#" className='text-center'>
@@ -17,7 +17,7 @@ const Interests=({icon, title})=>{
   </div>
   )
 }
-const Trainings = ({}) => {
+const Trainings = () => {
 return (
   <div className=' bg-indigo-100  p-4 shadow'>
     <div className='flex justify-center flex-wrap rounded bg-white'>
