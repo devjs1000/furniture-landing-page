@@ -131,7 +131,13 @@ svg{
   overflow: hidden;
   transition: 4s;
 }
-
+.replace-animation{
+  animation:replace .4s alternate infinite;
+}
+@keyframes replace {
+  from { transform: scale(.2); opacity: .5;}
+  to { transform: scale(1); opacity: 1;}
+}
 @media screen and (max-width: 640px) {
   .sm-hide {
     display: none;

@@ -1,7 +1,7 @@
 import {useContext} from 'react';
-import Counter from './Counter';
 import {context} from '../context/mainContext'
-
+import Loading from './Loading'
+import Counter from "./Counter";
 export default ()=>{
   const ctx=useContext(context)
 

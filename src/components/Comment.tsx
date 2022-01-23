@@ -1,5 +1,5 @@
 
-import React, {useState} from 'react';
+import  {useState} from 'react';
 import authImg from '../../img/auth.svg'
 export default () => {
   const [comment, setComment]=useState('')

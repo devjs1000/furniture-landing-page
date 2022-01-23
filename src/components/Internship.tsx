@@ -1,4 +1,3 @@
-import React from 'react';
 import InternshipByLocation from './InternshipByLocation'
 import Category from './Category'
 import Heading from './Heading'

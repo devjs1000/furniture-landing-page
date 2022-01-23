@@ -1,4 +1,3 @@
-import React from 'react';
 import androidIcon from '../../icons/android.png'
 import autocadIcon from '../../icons/autocad.png'
 import excelIcon from '../../icons/excel.png'

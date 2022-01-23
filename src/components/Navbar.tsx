@@ -1,14 +1,14 @@
-import React,{useContext, useState} from "react";
+import {useContext, useState} from "react";
 import { context } from "../context/mainContext";
 import {Link} from 'react-router-dom'
 export default function Navbar() {
   const ctx=useContext(context)
   return (
     <nav className="flex justify-between mx-2">
-    <Link to='/'>
+    <Link to='/' >
 
       <img
-        className="h-12 px-2 m-2 w-auto object-cover"
+        className=" w-full px-2 m-auto  w-auto object-contain"
         src="https://seeklogo.com/images/W/woodland-logo-0EC7F57B3B-seeklogo.com.png"
         alt="brand"
         aria-label="brand"

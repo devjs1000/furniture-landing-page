@@ -1,4 +1,5 @@
-import React from 'react';
+
+import {Link} from 'react-router-dom'
 import bangloreIcon from '../../icons/banglore.png'
 import delhiIcon from '../../icons/delhi.png'
 import kolkataIcon from '../../icons/kolkata.png'
@@ -8,12 +9,15 @@ import chennaiIcon from '../../icons/chennai.png'
 import internationalIcon from '../../icons/international.png'
 
 const JobArea=({icon, title})=>{
+  const linkAddress=title.trim().replaceAll('/','-').replaceAll(' ', '-')
+
   return (
   <div className='mx-2 p-2' >
-    <a href="#">
+<Link to={linkAddress}>
       <img src={icon} className='rounded h-32' alt={title} />
       <button className='w-full my-2 shadow-lg font-semibold bg-indigo-500 text-white py-1 px-2 rounded'>{title}</button>
-    </a>
+
+      </Link>
   </div>
   )
 }
