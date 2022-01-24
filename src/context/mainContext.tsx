@@ -1,27 +1,37 @@
 import { createContext, useState } from "react";
-import barrierBreakingImg from '../../img/barrierBreaking.svg'
-import trainingImg from '../../img/training.svg'
-import feelingProudImg from '../../img/feelingProud.svg'
 
 export const context = createContext([] as any);
 
 export default function MainContext({ children }: { children: any }) {
   const [products, setProducts] = useState([
     {
-      title:'Internships',
-      color: "yellow",
-      background:barrierBreakingImg
+      title:'Xcitedu',
+      color: "#f97316",
+      background:0,
+     baseline:'Internships',
+     punchline:'looking for internships'
     },
     {
-      title:'Training',
-      color: "gray",
-      background:trainingImg
+      title:'XcitEducation',
+      color: "#10b981",
+      background:1,
+      baseline:'Trainings',
+      punchline:'looking forward to scale your skills'
     },
     {
-      title:'Capital',
-      color: "red",
-      background: feelingProudImg
+      title:'Xcitedu',
+      color: "#111827",
+      background: 2,
+      baseline:'Capitals',
+      punchline:'building startups'
     },
+    {
+      title:'Xciteducation',
+      color: "#facc15",
+      background: 3,
+      baseline:'Foundations',
+      punchline:'reshaping villages'
+    }
   ]);
   const [selected, setSelected] = useState(1);
   const [menuNav, setMenuNav] = useState(0);

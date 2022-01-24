@@ -1,240 +1,83 @@
 
 export default function () {
   return (
-    <footer>
-      <div className="bg-gray-100">
-        <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
-          <div className="p-5 w-48 ">
-            <div className="text-xs uppercase text-gray-500 font-medium">
-              Home
-            </div>
-            <a className="my-3 block" href="/#">
-              Services <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Products <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              About Us <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Pricing <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Partners <span className="text-teal-600 text-xs p-1">New</span>
-            </a>
-          </div>
-          <div className="p-5 w-48 ">
-            <div className="text-xs uppercase text-gray-500 font-medium">
-              User
-            </div>
-            <a className="my-3 block" href="/#">
-              Sign in <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              New Account <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Demo <span className="text-teal-600 text-xs p-1">New</span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Career{" "}
-              <span className="text-teal-600 text-xs p-1">We're hiring</span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Surveys <span className="text-teal-600 text-xs p-1">New</span>
-            </a>
-          </div>
-          <div className="p-5 w-48 ">
-            <div className="text-xs uppercase text-gray-500 font-medium">
-              Resources
-            </div>
-            <a className="my-3 block" href="/#">
-              Documentation <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Tutorials <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Support <span className="text-teal-600 text-xs p-1">New</span>
-            </a>
-          </div>
-          <div className="p-5 w-48 ">
-            <div className="text-xs uppercase text-gray-500 font-medium">
-              Product
-            </div>
-            <a className="my-3 block" href="/#">
-              Our Products <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Great Deals <span className="text-teal-600 text-xs p-1">New</span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Analytics <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Mobile <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-          </div>
-          <div className="p-5 w-48 ">
-            <div className="text-xs uppercase text-gray-500 font-medium">
-              Support
-            </div>
-            <a className="my-3 block" href="/#">
-              Help Center <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Privacy Policy <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              Conditions <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-          </div>
-          <div className="p-5 w-48 ">
-            <div className="text-xs uppercase text-gray-500 font-medium">
-              Contact us
-            </div>
-            <a className="my-3 block" href="/#">
-              XXX XXXX, Floor 4 San Francisco, CA{" "}
-              <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-            <a className="my-3 block" href="/#">
-              contact@company.com{" "}
-              <span className="text-teal-600 text-xs p-1"></span>
-            </a>
-          </div>
-        </div>
+    <footer id='footer' className=" text-gray-600 w-full">
+      <div className="p-2 bg-gray-900 flex flex-wrap justify-around text-sm">
+        <div className="text-gray-100">ABOUT US</div>
+        <div className="text-gray-100">CAREERS</div>
+        <div className="text-gray-100">BLOGS</div>
+        <div className="text-gray-100">PRIVACY POLICY</div>
+        <div className="text-gray-100">TERMS & CONDITIONS</div>
+        <div className="text-gray-100">REFUND POLICY</div>
+        <div className="text-gray-100">COMPLAINTS RESOLUTION</div>
+
+        <div className="text-gray-100">LEGAL NOTICE</div>
       </div>
 
-      <div className="bg-gray-100 pt-2 ">
-        <div
-          className="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col
-      md:flex-row max-w-6xl"
-        >
-          <div className="mt-2">© Copyright 2022. All Rights Reserved.</div>
-          <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-            <a href="/#" className="w-6 mx-1">
-              <svg
-                className="fill-current cursor-pointer text-gray-500 hover:text-gray-400"
-                width="100%"
-                height="100%"
-                viewBox="0 0 24 24"
-                version="1.1"
-                style={{
-                  fillRule: "evenodd",
-                  clipRule: "evenodd",
-                }}
-              >
-                <path
-                  id="Twitter"
-                  d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
-                  5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
-                  -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
-                  0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
-                  -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
-                  0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
-                  -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
-                  0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
-                  -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
-                  -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
-                  1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
-                  -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
-                  6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
-                  0.771,-0.67 1.054,-1.093Z"
-                ></path>
-              </svg>
-            </a>
-            <a href="/#" className="w-6 mx-1">
-              <svg
-                className="fill-current cursor-pointer text-gray-500 hover:text-gray-400"
-                width="100%"
-                height="100%"
-                viewBox="0 0 24 24"
-                version="1.1"
-                style={{
-                  fillRule: "evenodd",
-                  clipRule: "evenodd",
-                }}
-              >
-                <path
-                  id="Facebook"
-                  d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
-                  5.373,-12 12,-12c6.627,0 12,5.373
-                  12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
-                  0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
-                  -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"
-                ></path>
-              </svg>
-            </a>
-            <a href="/#" className="w-6 mx-1">
-              <svg
-                className="fill-current cursor-pointer text-gray-500 hover:text-gray-400"
-                width="100%"
-                height="100%"
-                viewBox="0 0 24 24"
-                version="1.1"
-                style={{
-                  fillRule: "evenodd",
-                  clipRule: "evenodd",
-                }}
-              >
-                <g id="Layer_1">
-                  <circle id="Oval" cx="12" cy="12" r="12"></circle>
-                  <path
-                    id="Shape"
-                    d="M19.05,8.362c0,-0.062 0,-0.125 -0.063,-0.187l0,-0.063c-0.187,-0.562
-                     -0.687,-0.937 -1.312,-0.937l0.125,0c0,0 -2.438,-0.375 -5.75,-0.375c-3.25,0
-                     -5.75,0.375 -5.75,0.375l0.125,0c-0.625,0 -1.125,0.375
-                     -1.313,0.937l0,0.063c0,0.062 0,0.125 -0.062,0.187c-0.063,0.625 -0.25,1.938
-                     -0.25,3.438c0,1.5 0.187,2.812 0.25,3.437c0,0.063 0,0.125
-                     0.062,0.188l0,0.062c0.188,0.563 0.688,0.938 1.313,0.938l-0.125,0c0,0
-                     2.437,0.375 5.75,0.375c3.25,0 5.75,-0.375 5.75,-0.375l-0.125,0c0.625,0
-                     1.125,-0.375 1.312,-0.938l0,-0.062c0,-0.063 0,-0.125
-                     0.063,-0.188c0.062,-0.625 0.25,-1.937 0.25,-3.437c0,-1.5 -0.125,-2.813
-                     -0.25,-3.438Zm-4.634,3.927l-3.201,2.315c-0.068,0.068 -0.137,0.068
-                     -0.205,0.068c-0.068,0 -0.136,0 -0.204,-0.068c-0.136,-0.068 -0.204,-0.204
-                     -0.204,-0.34l0,-4.631c0,-0.136 0.068,-0.273 0.204,-0.341c0.136,-0.068
-                     0.272,-0.068 0.409,0l3.201,2.316c0.068,0.068 0.136,0.204
-                     0.136,0.34c0.068,0.136 0,0.273 -0.136,0.341Z"
-                    style={{ fill: " rgb(255, 255, 255)" }}
-                  ></path>
-                </g>
-              </svg>
-            </a>
-            <a href="/#" className="w-6 mx-1">
-              <svg
-                className="fill-current cursor-pointer text-gray-500 hover:text-gray-400"
-                width="100%"
-                height="100%"
-                viewBox="0 0 24 24"
-                version="1.1"
-                style={{
-                  fillRule: "evenodd",
-                  clipRule: "evenodd",
-                }}
-              >
-                <path
-                  id="Shape"
-                  d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
-                  3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
-                  -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
-                  -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
-                  -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
-                  0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
-                  3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
-                  -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
-                  -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
-                  1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
-                  -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
-                  -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
-                  0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
-                  0.4,1.5l0,4.5l2.9,0Z"
-                ></path>
-              </svg>
-            </a>
-          </div>
+      <div className="p-1 bg-gray-50 flex items-center justify-around">
+        <div >
+          Xcitedu Software Solutions Pvt. Ltd © Copyright 2022. All Rights Reserved.
+
+        </div>
+        <div className='flex items-center'>
+          <a target='_blank' href='https://www.linkedin.com/company/xcitedu-software-solutions-private-limited' className='mx-3'>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+            </svg>
+          </a>
+          <button className='mx-3 icon'>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg>
+          </button>
+          <button className='mx-3 icon'>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg>
+          </button>
+          <button className='mx-3 icon '>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg>
+          </button>
+          <button className='mx-3 icon'>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
+
   );
 }

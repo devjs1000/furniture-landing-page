@@ -5,8 +5,16 @@ import CounterContainer from "./CounterContainer";
 export default ()=>{
   return (
     <Fragment>
-    <CounterContainer />
+            <main className="flex sm-wrap  m-6">
+<div className='w-full'>
+<CounterContainer />
+
+</div>
+    <div className='w-full'>
     <DialContainer />
+
+    </div>
+    </main>
     </Fragment>
   )
 }

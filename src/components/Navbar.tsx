@@ -1,43 +1,39 @@
-import {useContext, useState} from "react";
+import { useContext, useState } from "react";
 import { context } from "../context/mainContext";
-import {Link} from 'react-router-dom'
 export default function Navbar() {
-  const ctx=useContext(context)
+  const ctx = useContext(context);
   return (
-    <nav className="flex justify-between mx-2">
-    <Link to='/' >
+    <nav className="flex justify-between mx-2 py-2 shadow-lg" style={{zIndex:'1001 !important'}}>
+      <h1
+        className="bg-gray-700 text-white p-2 text-xl text-center  mx-4 font-bold"
+        style={{ width: "10rem" }}
+      >
+        XcitEducation
+      </h1>
 
-      <img
-        className=" w-full px-2 m-auto  w-auto object-contain"
-        src="https://seeklogo.com/images/W/woodland-logo-0EC7F57B3B-seeklogo.com.png"
-        alt="brand"
-        aria-label="brand"
-      />
-      </Link>
-
-      <div className="relative  w-full flex justify-end">
-      <Link to='/training'>
-        <button className="text-gray-400 mx-2  hover:text-gray-800 sm-hide">
-        TRAINING
+      <div className="relative  w-auto flex text-gray-800 bg-white justify-end fon font-semibold">
+        <button className="  hover:bg-gray-100 px-4   sm-hide">
+         TRAININGS
         </button>
-        </Link>
-        <Link to='/internship'>
-        <button className="text-gray-400 sm-hide mx-2 hover:text-gray-800">
-        INTERNSHIP
+        <button className=" sm-hide  px-4 hover:bg-gray-100">
+          INTERNSHIP
         </button>
-          </Link>
-        <Link to='/capital'>
-        <button className="text-gray-400 sm-hide  mx-2 hover:text-gray-800">
-        CAPITAL
+        <button className=" sm-hide px-4 hover:bg-gray-100">
+          CAPITALS
         </button>
-          </Link>
-        <button className="text-gray-400 mx-2 sm-show hover:text-gray-800" onClick={()=>{
-         ctx.setMenuNav(1)
-        }}>
+        <button className=" sm-hide px-4 hover:bg-gray-100">
+         FOUNDATIONS
+        </button>
+        <button
+          className="text-gray-800 text-xl  mx-2 sm-show "
+          onClick={() => {
+            ctx.setMenuNav(1);
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="25"
+            width="30"
+            height="30"
             fill="currentColor"
             viewBox="0 0 16 16"
           >
