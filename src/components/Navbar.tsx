@@ -12,6 +12,9 @@ export default function Navbar() {
       </h1>
 
       <div className="relative  w-auto flex text-gray-800 bg-white justify-end fon font-semibold">
+      <button className="  hover:bg-gray-100 px-4   sm-hide">
+         HOUSE OF DESIGN
+        </button>
         <button className="  hover:bg-gray-100 px-4   sm-hide">
          TRAININGS
         </button>
@@ -28,6 +31,7 @@ export default function Navbar() {
           className="text-gray-800 text-xl  mx-2 sm-show "
           onClick={() => {
             ctx.setMenuNav(1);
+            document.body.style.overflow='hidden'
           }}
         >
           <svg

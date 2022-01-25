@@ -27,7 +27,7 @@ body {
   left: 3.5rem;
 }
 .down .line {
-  height: 16rem;
+  height: 15rem;
   width: 0.2rem;
 }
 .btn-1,
@@ -94,7 +94,68 @@ svg {
   position: absolute;
   bottom: 0;
 }
+
+.rect-outer {
+  height: 23rem;
+  width: 40rem;
+  transform: rotate(-60deg) translateX(25rem) ;
+}
+.rect-inner {
+  height: 15rem;
+  width: 20rem;
+  transform: rotate(60deg) translateX(-10rem) translateY(15rem);
+
+}
+.rect-title{
+  height: 15rem;
+  width: 20rem;
+  transform: rotate(60deg) translateX(-15rem) translateY(17rem);
+
+}
+.footer-nav div{
+  transition: .3s;
+  cursor: pointer;
+ padding-bottom: .2rem;
+ border-bottom: 2px solid transparent;
+
+}
+.footer-nav div:hover{
+  /* transform: translateY(5px); */
+  /* text-decoration: underline; */
+  border-bottom: 1px solid white;
+}
+
+.animate-up{
+  transition: .3s;
+}
+.animate-up:hover{
+  transform:scale(1.2)
+
+}
+.show-menu{
+  width: 100%;
+  transition: .3s;
+  opacity: .90;
+}
+.hide-menu{
+  /* width: 0; */
+  transition: .3s;
+  opacity: 0;
+  left:-100vw;
+  top:-100vh;
+
+  overflow: hidden !important;
+}
+.footer-nav{
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
 @media screen and (max-width: 640px) {
+  .main-headings{
+   font-size: 3rem;
+  }
   .sm-hide {
     display: none;
   }
@@ -118,16 +179,28 @@ svg {
     width: 100vw;
     margin: 0;
   }
-  ::-webkit-scrollbar {
-    display: none !important;
-    scrollbar-width: 0 !important;
-  }
   #footer {
+    margin:5rem 5rem 0 0;
     position: relative;
     bottom: 0;
   }
+  
+  .footer-nav div{
+    width:100%;
+    margin:0 1rem;
+    transition: .3s;
+    border:none;
+    
+  }
+  .footer-nav div:hover{
+    /* transform: translateX(5px); */
+    /* text-decoration: underline; */
+    border:none;
+   filter:invert(50%)
+  }
   .dial-container {
     transform: scale(.9);
+    
     
   }
   .rect-outer {
@@ -141,19 +214,14 @@ svg {
     transform: rotate(60deg) translateX(-5rem) translateY(4rem) !important;
   
   }
+  .rect-title{
+    height: 13rem !important;
+    width: 13rem !important;
+    transform: rotate(60deg) translateX(-10rem) translateY(2.5rem) !important;
   
+  }
+  html ::-webkit-scrollbar{
+    display: none;
+  }
   
 }
-
-.rect-outer {
-  height: 23rem;
-  width: 40rem;
-  transform: rotate(-60deg) translateX(25rem) ;
-}
-.rect-inner {
-  height: 15rem;
-  width: 20rem;
-  transform: rotate(60deg) translateX(-10rem) translateY(15rem);
-
-}
-

@@ -31,9 +31,16 @@ export default function MainContext({ children }: { children: any }) {
       background: 3,
       baseline:'Foundations',
       punchline:'reshaping villages'
+    },
+    {
+      title:'XcitEdu',
+      color: "#ef4444",
+      background: 4,
+      baseline:'House Of Design',
+      punchline:'An Interior Designing Sphere'
     }
   ]);
-  const [selected, setSelected] = useState(1);
+  const [selected, setSelected] = useState(0);
   const [menuNav, setMenuNav] = useState(0);
   return (
     <context.Provider
