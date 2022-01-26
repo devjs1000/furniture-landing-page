@@ -147,9 +147,6 @@ svg {
   overflow: hidden !important;
 }
 .footer-nav{
-  background: #0f0c29;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 @media screen and (max-width: 640px) {
@@ -184,13 +181,13 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
     position: relative;
     bottom: 0;
   }
-  
+
   .footer-nav div{
     width:100%;
     margin:0 1rem;
     transition: .3s;
     border:none;
-    
+
   }
   .footer-nav div:hover{
     /* transform: translateX(5px); */
@@ -200,8 +197,8 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
   }
   .dial-container {
     transform: scale(.9);
-    
-    
+
+
   }
   .rect-outer {
     height: 23rem;
@@ -212,16 +209,16 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
     height: 13rem !important;
     width: 13rem !important;
     transform: rotate(60deg) translateX(-5rem) translateY(4rem) !important;
-  
+
   }
   .rect-title{
     height: 13rem !important;
     width: 13rem !important;
     transform: rotate(60deg) translateX(-10rem) translateY(2.5rem) !important;
-  
+
   }
   html ::-webkit-scrollbar{
     display: none;
   }
-  
+
 }

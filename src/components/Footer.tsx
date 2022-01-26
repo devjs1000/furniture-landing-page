@@ -14,7 +14,7 @@ export default function () {
       </div>
 
       <div className=" bg-gray-50 flex items-center flex-wrap justify-around ">
-          <div className="bg-gray-700 footer-nav text-center text-gray-50 w-full">Xcitedu Software Solutions Pvt. Ltd</div>
+          <div className="bg-gray-900  text-center text-gray-50 w-full">Xcitedu Software Solutions Pvt. Ltd</div>
           <div>© Copyright 2022. All Rights Reserved.</div>
       </div>
     </footer>

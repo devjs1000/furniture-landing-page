@@ -1,5 +1,4 @@
 import { useState, useContext , useLayoutEffect} from "react";
-
 import { context } from "../context/mainContext";
 export default function Counter(props:any) {
   useLayoutEffect(()=>{
@@ -30,7 +29,7 @@ export default function Counter(props:any) {
             elCounter.style.backgroundColor=ctx.products[ctx.selected].color
             const outerRect:any=document.getElementById('outer-rect')
             outerRect.style.backgroundColor=ctx.products[ctx.selected].color
-        
+
           ctx.setSelected((ctx.selected-1)<0?ctx.products.length-1:ctx.selected-1)
         }} className="btn-1 w-10 h-10 bg-white flex justify-center items-center rounded-full relative">
           <div className="hover-btn w-10 h-10 rounded-full"></div>

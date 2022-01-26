@@ -11,7 +11,7 @@ export default function Navbar() {
         XcitEducation
       </h1>
 
-      <div className="relative  w-auto flex text-gray-800 bg-white justify-end fon font-semibold">
+      <div className="relative  w-auto flex text-gray-800 bg-white justify-end fon font-bold">
       <button className="  hover:bg-gray-100 px-4   sm-hide">
          HOUSE OF DESIGN
         </button>

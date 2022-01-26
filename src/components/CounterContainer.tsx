@@ -1,6 +1,8 @@
 import {useContext} from 'react';
 import {context} from '../context/mainContext'
 import Counter from "./Counter";
+import Social from './Social'
+
 export default ()=>{
   const ctx=useContext(context)
 
@@ -14,6 +16,10 @@ export default ()=>{
         {ctx.products[ctx.selected].punchline}
         </h2>
       </div>
+      <div className='ml-4'>
+      <Social/>
+      </div>
+
     </div>
   )
 }
