@@ -5,7 +5,7 @@ export default () => {
   return (
     <div
       className="flex m-auto justify-center items-center "
-      style={{ minHeight: "60vh" }}
+      style={{ minHeight: "85vh" }}
     >
       <div className="  flex flex-wrap justify-center px-5 items-center ">
         <h1 className="text-6xl text-center m-4 w-auto text-gray-800" style={{margin:'50px !important'}}>

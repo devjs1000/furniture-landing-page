@@ -5,7 +5,7 @@ import CounterContainer from "./CounterContainer";
 export default ()=>{
   return (
     <Fragment>
-            <main className="flex sm-wrap  m-6">
+            <main className="flex sm-wrap  m-6  h-auto sm:h-[80vh]" >
 <div className='w-full'>
 <CounterContainer />
 

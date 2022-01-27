@@ -1,30 +1,33 @@
 import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import { context } from "../context/mainContext";
 export default function Navbar() {
   const ctx = useContext(context);
   return (
     <nav className="flex justify-between mx-2 py-2 shadow-lg" style={{zIndex:'1001 !important'}}>
       <h1
-        className="bg-gray-700 text-white p-2 text-xl text-center  mx-4 font-bold"
+        className="bg-gray-700 text-white cursor-pointer p-2 text-xl text-center  mx-4 font-bold"
         style={{ width: "10rem" }}
       >
+        <Link to='/'>
         XcitEducation
+        </Link>
       </h1>
 
-      <div className="relative  w-auto flex text-gray-800 bg-white justify-end fon font-bold">
-      <button className="  hover:bg-gray-100 px-4   sm-hide">
+      <div className="relative  w-auto flex text-gray-800 bg-white justify-end truncate font-bold">
+      <button className="  hover:bg-gray-100 px-2 sm-hide">
          HOUSE OF DESIGN
         </button>
-        <button className="  hover:bg-gray-100 px-4   sm-hide">
+        <button className="  hover:bg-gray-100 px-2   sm-hide">
          TRAININGS
         </button>
-        <button className=" sm-hide  px-4 hover:bg-gray-100">
+        <button className=" sm-hide  px-2 hover:bg-gray-100">
           INTERNSHIP
         </button>
-        <button className=" sm-hide px-4 hover:bg-gray-100">
+        <button className=" sm-hide px-2 hover:bg-gray-100">
           CAPITALS
         </button>
-        <button className=" sm-hide px-4 hover:bg-gray-100">
+        <button className=" sm-hide px-2 hover:bg-gray-100">
          FOUNDATIONS
         </button>
         <button

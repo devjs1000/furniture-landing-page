@@ -91,8 +91,8 @@ svg {
   }
 }
 #footer {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
 }
 
 .rect-outer {
@@ -112,14 +112,14 @@ svg {
   transform: rotate(60deg) translateX(-15rem) translateY(17rem);
 
 }
-.footer-nav div{
+.footer-nav .link{
   transition: .3s;
   cursor: pointer;
  padding-bottom: .2rem;
  border-bottom: 2px solid transparent;
 
 }
-.footer-nav div:hover{
+.footer-nav .link:hover{
   /* transform: translateY(5px); */
   /* text-decoration: underline; */
   border-bottom: 1px solid white;
