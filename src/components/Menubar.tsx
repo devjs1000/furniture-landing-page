@@ -1,12 +1,14 @@
-import { useContext } from "react";
+import { useContext} from "react";
 import { context } from "../context/mainContext";
 export default function () {
   const ctx = useContext(context);
+
   return (
     <div
       className={`${
         ctx.menuNav ? "show-menu  sm-flex" : "hide-menu "
       }  menubar fixed  flex-wrap  justify-center items-center top-0 text-gray-700 bg-gray-100`}
+      id='menubar'
     >
       <div
         className={`  ${

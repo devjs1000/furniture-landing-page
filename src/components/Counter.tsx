@@ -1,5 +1,6 @@
 import { useState, useContext , useLayoutEffect} from "react";
 import { context } from "../context/mainContext";
+import dotsImg from '../../img/dots.png'
 export default function Counter(props:any) {
   useLayoutEffect(()=>{
     const elCounter:any=document.getElementById('counter')
@@ -19,8 +20,8 @@ export default function Counter(props:any) {
       </div>
       <img
         className="bg-dotted"
-        src="http://www.clker.com/cliparts/8/e/a/b/1194989365666493578pattern-dots-square-grid-01.svg.med.png"
-        alt="Dots Square Grid 01 Pattern Clip Art at Clker.com - vector clip art online,  royalty free &amp;amp; public domain"
+        src={dotsImg}
+        alt="dots image"
       />
       <div className="down absolute">
         <div className="line bg-gray-400"></div>

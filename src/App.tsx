@@ -10,6 +10,7 @@ function App() {
   const [cardData, setCardData] = useState([]);
   const ctx = useContext(context);
   useEffect(() => {
+    
     fetch("/src/data/cards.json")
       .then((res) => res.json())
       .then((data) => {
