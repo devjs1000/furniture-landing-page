@@ -3,9 +3,8 @@ import foundationImg from "../../img/foundation.svg";
 import trainingImg from "../../img/training.svg";
 import internshipImg from "../../img/barrierBreaking.svg";
 import designImg from "../../img/design.svg";
-// import policyImg from "../../img/policy.svg"
+import policyImg from "../../img/terms.svg"
 export default () => {
-  const policyImg=''
 
   return (
     <div className="">
