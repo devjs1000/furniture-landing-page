@@ -7,6 +7,55 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ /* p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	line-height:115%;
+	font-size:11.0pt;
+  display:block;
+	font-family:"Arial",sans-serif;} */
+h3
+	{margin-top:16.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	color:#434343;
+	font-weight:normal;}
+h4
+	{margin-top:14.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;}
+.MsoChpDefault
+	{font-family:"Arial",sans-serif;}
+.MsoPapDefault
+	{line-height:115%;}
+ ol
+	{margin-bottom:1rem;
+  list-style: decimal !important;
+  padding:0 2rem 0 2rem ;
+  }
+  li{
+    
+  }
+ul
+	{margin-bottom:0in;
+    list-style: decimal !important;
+
+  }
 .App {
   width: 100%;
   height: auto;
@@ -147,7 +196,6 @@ svg {
   overflow: hidden !important;
 }
 .footer-nav{
-
 }
 @media screen and (max-width: 640px) {
   .main-headings{
@@ -177,7 +225,6 @@ svg {
     margin: 0;
   }
   #footer {
-    margin:5rem 5rem 0 0;
     position: relative;
     bottom: 0;
   }
@@ -221,4 +268,12 @@ svg {
     display: none;
   }
 
+}
+
+.hide-content{
+  height:200px;
+
+}
+.hide-content::before{
+  content: ' ';
 }

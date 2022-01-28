@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Notfound from "./components/Notfound";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import Refund from "./pages/Refund";
 const Menubar = lazy(() => import("./components/Menubar"));
 const Footer = lazy(() => import("./components/Footer"));
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/terms-and-conditions" element={<Terms />} />
+        <Route path='/refund-policy' element={<Refund/>} />
 
       </Routes>
 
