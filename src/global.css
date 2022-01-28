@@ -276,4 +276,9 @@ svg {
 }
 .hide-content::before{
   content: ' ';
+  height: 200px;
+  display: block;
+  width: auto;
+  background-color: white;
+  position: absolute;
 }

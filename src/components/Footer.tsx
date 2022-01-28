@@ -1,24 +1,31 @@
 import { Link } from "react-router-dom";
 export default function () {
+  const goToTop=()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0
+  }
   return (
     <footer id="footer" className=" text-gray-600 w-full">
       <div className="p-2 bg-gray-900 grid grid-flow-rows md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6  text-sm footer-nav">
-        <Link className="text-gray-100 text-center link" to="/about">
+        <Link className="text-gray-100 text-center link" to="/about" onClick={goToTop}>
           ABOUT US
         </Link>
-        <Link to="/careers" className="text-center text-gray-100 link">
+        <Link to="/careers" onClick={goToTop} className="text-center text-gray-100 link">
           CAREERS
         </Link>
-        <Link to="/blogs" className="text-center text-gray-100 link">
+        <Link to="/blogs" onClick={goToTop} className="text-center text-gray-100 link">
           BLOGS
         </Link>
-        <Link to="/privacy-policy" className="text-center text-gray-100 link">
+        <Link to="/privacy-policy" onClick={goToTop} className="text-center text-gray-100 link">
           PRIVACY POLICY
         </Link>
-        <Link to="/terms-and-conditions" className="text-center text-gray-100 link">
+        <Link to="/terms-and-conditions" onClick={goToTop} className="text-center text-gray-100 link">
+          
           TERMS & CONDITIONS
+
+        
         </Link>
-        <Link to="/refund-policy" className="text-center text-gray-100 link ">
+        <Link  to="/refund-policy" onClick={goToTop} className="text-center text-gray-100 link ">
           REFUND POLICY
         </Link>
 

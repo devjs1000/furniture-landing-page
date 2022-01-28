@@ -1,9 +1,11 @@
 export default () => {
   return (
     <div className="px-6 py-6">
-      <h1 className="text-2xl text-gray-800 px-8">
+
+        <h1 className="text-2xl text-gray-800 px-8">
         Refund & Cancellation Policy
       </h1>
+
       <ol className="text-gray-700 list-decimal text-sm px-10">
         <li>
           For training programs offered on Xciteducation Trainings, except for
@@ -61,6 +63,7 @@ export default () => {
           purchase.
         </li>
       </ol>
+
     </div>
   );
 };

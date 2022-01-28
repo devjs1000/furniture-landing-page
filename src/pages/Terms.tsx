@@ -190,7 +190,6 @@ export default () => {
             &nbsp;
           </span>
         </p>
-        <div className="hide-content " id='terms-hide-content'>
         <p
           className="MsoNormal"
           style={{
@@ -1741,7 +1740,6 @@ export default () => {
         </p>
         <p className="MsoNormal">&nbsp;</p>
         </div>
-      </div>
     </div>
   );
 };
