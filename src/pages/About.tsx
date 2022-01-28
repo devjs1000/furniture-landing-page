@@ -1,11 +1,12 @@
-import capitalImg from "../../img/capitalRaise.svg";
+import capitalImg from "../../img/feelingProud.svg";
 import foundationImg from "../../img/foundation.svg";
 import trainingImg from "../../img/training.svg";
 import internshipImg from "../../img/barrierBreaking.svg";
 import designImg from "../../img/design.svg";
-import policyImg from "../../img/policy.svg"
-
+// import policyImg from "../../img/policy.svg"
 export default () => {
+  const policyImg=''
+
   return (
     <div className="">
       <section
