@@ -6,7 +6,8 @@ export default function () {
   }
   return (
     <footer id="footer" className=" text-gray-600 w-full">
-      <div className="p-2 bg-gray-900 grid grid-flow-rows md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6  text-sm footer-nav">
+      <div className="p-2 bg-[#090b04]
+       grid grid-flow-rows md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7  text-sm footer-nav">
         <Link className="text-gray-100 text-center link" to="/about" onClick={goToTop}>
           ABOUT US
         </Link>
@@ -28,7 +29,9 @@ export default function () {
         <Link  to="/refund-policy" onClick={goToTop} className="text-center text-gray-100 link ">
           REFUND POLICY
         </Link>
-
+        <Link  to="/equal-opportunity" onClick={goToTop} className="text-center text-gray-100 link ">
+         EQUAL OPPORTUNITY
+        </Link>
       </div>
 
       <div className=" bg-gray-50 flex items-center flex-wrap justify-around ">

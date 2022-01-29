@@ -3,159 +3,93 @@ import foundationImg from "../../img/foundation.svg";
 import trainingImg from "../../img/training.svg";
 import internshipImg from "../../img/barrierBreaking.svg";
 import designImg from "../../img/design.svg";
-import policyImg from "../../img/terms.svg"
+import policyImg from "../../img/terms.svg";
+import DialBox from "../components/DialBox";
+import Card from "../components/Card";
 export default () => {
-
   return (
-    <div className="">
-      <section
-        className="bg-gray-100 w-[100%]"
-        style={{
-          backgroundImage:
-            "url(https://c.tenor.com/p5aPf47OAeoAAAAC/aesthetic-colors.gif)",
-        }}
-      >
-        <div className="backdrop-blur-[30px]">
-          <div className="w-[90%] mx-auto md:w-[75%] pt-[20px] ">
-            <h1 className="text-center text-5xl md:text-6xl font-semibold font-sans text-slate-100">
-              Our vision
+    <>
+      <section className=" w-[100%]">
+        <div className=" ">
+          {/* <div className="absolute right-0">
+          <DialBox/>
+          </div> */}
+
+          <div className="bg-slate-50 flex-wrap mx-auto px-10 sm:px-32 pt-[20px] bg-no-repeat ">
+            <h1 className="text-center flex justify-center  w-full  text-4xl sm:text-6xl mt-12  font-semibold font-sans text-slate-700">
+              <span className="">
+                {" "}
+                Welcome to
+                <span className="text-blue-500"> Xcitedu!</span>
+              </span>
             </h1>
-            <h4 className="text-center text-lg md:text-xl font-semibold py-4 md:py-6 text-slate-800">
-              XcitEducation is a educational institue with all kind of
-              opportunites.
+            <h4 className="text-center mb-0 w-full text-[1.5rem] font-semibold py-4 text-slate-500">
+              India's most innovative value based corporation{" "}
             </h4>
-            <p className="px-3 text-left sm:text-center font-semibold text-sm md:text-base text-gray-700 mt-[5px]">
-              We are a educational institue on a mission to equip students with
-              relevant skills & practical exposure to help them get the best
-              possible start to their careers. Imagine a world full of freedom
-              and possibilities. A world where you can discover your passion and
-              turn it into your career. A world where you graduate fully
-              assured, confident, and prepared to stake a claim on your place in
-              the.
-            </p>
-            <div className="  py-[4rem] flex flex-wrap justify-center">
-              <div className="  md:mr-[32px] p-3 md:p-4 w-[90%] lg:w-[368px] xl:w-[464px] lg:h-[235px] backdrop-blur-[30px] bg-[rgba(255,255,255,.1)] flex items-center rounded-2xl relative mt-[30px] shadow-md hover:shadow-lg cursor-pointer">
-                <img
-                  src={internshipImg}
-                  alt="training"
-                  className="mr-[1rem] w-[100px] h-[100px] md:w-[182px] md:h-[164px]"
-                />
-                <div className=" min-h-[100px] bg-[rgba(255,255,255,.2)] w-[80%] p-1 rounded-r-xl">
-                  <h3 className="text-xl  md:text-xl lg:text-2xl lg:mb-[8px] font-semibold text-orange-400 mb-[2px] mt-0 md:my-[8px] text-left">
-                    Internships
-                  </h3>
-                  <p className="text-left mb-0 mt-0 text-sm md:text-base font-semibold text-gray-800">
-                    Find 10,000+ internships from great companies to give a
-                    kickstart to your career
-                  </p>
-                  <a href="#" className="text-cyan-600 font-semibold text-sm ">
-                    Explore more
-                    <i className="fas fa-arrow-right pl-1"></i>
-                  </a>
-                </div>
-              </div>
-              <div className=" backdrop-blur-[30px] bg-[rgba(255,255,255,.1)] p-3 md:p-4 w-[90%] lg:w-[368px] xl:w-[464px] lg:h-[235px] bg-white flex items-center rounded-2xl relative mt-[30px] shadow-md hover:shadow-lg cursor-pointer">
-                <img
-                  src={trainingImg}
-                  alt="training"
-                  className="mr-[1rem] w-[100px] h-[100px] md:w-[182px] md:h-[164px]"
-                />
-                <div className="min-h-[100px]  bg-[rgba(255,255,255,.2)] w-[80%] p-1 rounded-r-xl">
-                  <h3 className="text-xl md:text-2xl font-semibold text-emerald-600 mb-[2px] mt-0 md:my-[8px] text-left">
-                    Trainings
-                  </h3>
-                  <p className="text-left mb-0 mt-0 text-sm md:text-base font-semibold text-gray-800">
-                    Learn new-age skills on the go with our short-term online
-                    trainings
-                  </p>
-                  <a href="#" className="text-cyan-600 font-semibold text-sm ">
-                    Explore more
-                    <i className="pl-1 fas fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div className=" backdrop-blur-[30px] bg-[rgba(255,255,255,.1)] md:mr-[32px] p-3 md:p-4 w-[90%] lg:w-[368px] xl:w-[464px] lg:h-[235px] bg-white flex items-center rounded-2xl relative mt-[30px] shadow-md hover:shadow-lg cursor-pointer">
-                <img
-                  src={capitalImg}
-                  alt="training"
-                  className="mr-[1rem] w-[100px] h-[100px] md:w-[182px] md:h-[164px]"
-                />
-                <div className="min-h-[100px]  bg-[rgba(255,255,255,.2)] w-[80%] p-1 rounded-r-xl">
-                  <h3 className="text-xl md:text-2xl font-semibold text-[#111827] mb-[2px] mt-0 md:my-[8px] text-left">
-                    Capitals
-                  </h3>
-                  <p className="text-left mb-0 mt-0 text-sm md:text-base font-semibold text-gray-800">
-                    Specialize in industry-oriented programs that get you ready
-                    for a career in your
-                  </p>
-                  <a href="#" className="text-cyan-600 font-semibold text-sm ">
-                    Explore more
-                    <i className="pl-1 fas fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div className=" backdrop-blur-[30px] bg-[rgba(255,255,255,.1)] p-3 md:p-4 w-[90%] lg:w-[368px] xl:w-[464px] lg:h-[235px] bg-white flex items-center rounded-2xl relative mt-[30px] shadow-md hover:shadow-lg cursor-pointer">
-                <img
-                  src={foundationImg}
-                  alt="training"
-                  className="mr-[1rem] w-[100px] h-[100px] md:w-[182px] md:h-[164px]"
-                />
-                <div className=" min-h-[100px] bg-[rgba(255,255,255,.2)] w-[80%] p-1 rounded-r-xl">
-                  <h3 className="text-xl md:text-2xl font-semibold text-yellow-600 mb-[2px] mt-0 md:my-[8px] text-left">
-                    Foundations
-                  </h3>
-                  <p className="text-left mb-0 mt-0 text-sm md:text-base font-semibold text-gray-800">
-                    Get premium fresher jobs with a minimum CTC of 3LPA on your
-                    fingertips
-                  </p>
-                  <a href="#" className="text-cyan-600 font-semibold text-sm ">
-                    Explore more
-                    <i className="pl-1 fas fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div className=" md:mr-[32px] backdrop-blur-[30px] bg-[rgba(255,255,255,.1)] p-3 md:p-4 w-[90%] lg:w-[368px] xl:w-[464px] lg:h-[235px] bg-white flex items-center rounded-2xl relative mt-[30px] shadow-md hover:shadow-lg cursor-pointer">
-                <img
-                  src={designImg}
-                  alt="training"
-                  className="mr-[1rem] w-[100px] h-[100px] md:w-[182px] md:h-[164px]"
-                />
-                <div className=" min-h-[100px] bg-[rgba(255,255,255,.2)] w-[80%] p-1 rounded-r-xl">
-                  <h3 className="text-xl md:text-2xl font-semibold text-yellow-600 mb-[2px] mt-0 md:my-[8px] text-left">
-                    House Of Design
-                  </h3>
-                  <p className="text-left mb-0 mt-0 text-sm md:text-base font-semibold text-gray-800">
-                    Get premium design for your dream House
-                  </p>
-                  <a href="#" className="text-cyan-600 font-semibold text-sm ">
-                    Explore more
-                    <i className="pl-1 fas fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-              <div className=" backdrop-blur-[30px] bg-[rgba(255,255,255,.1)] p-3 md:p-4 w-[90%] lg:w-[368px] xl:w-[464px] lg:h-[235px] bg-white flex items-center rounded-2xl relative mt-[30px] shadow-md hover:shadow-lg cursor-pointer">
-                <img
-                  src={policyImg}
-                  alt="training"
-                  className="mr-[1rem] w-[100px] h-[100px] md:w-[182px] md:h-[164px]"
-                />
-                <div className=" min-h-[100px] bg-[rgba(255,255,255,.2)] w-[80%] p-1 rounded-r-xl">
-                  <h3 className="text-xl md:text-2xl font-semibold text-yellow-600 mb-[2px] mt-0 md:my-[8px] text-left">
-                    T & C
-                  </h3>
-                  <p className="text-left mb-0 mt-0 text-sm md:text-base font-semibold text-gray-800">
-                 Learn more about us in Terms and Conditions page.
-                  </p>
-                  <a href="#" className="text-cyan-600 font-semibold text-sm ">
-                    Explore more
-                    <i className="pl-1 fas fa-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
+            <h2 className="text-lg sm:2xl   mb-12 sm:mb-20 lg:mb-30 text-justify   text-gray-500 mt-[3px]">
+              Conceptualised as a Startup, and now an emerging global
+              enterprise, We are driven by passion for education and aim to
+              deliver effective & efficient service with integrity and
+              accountability using proven and innovative methods. With an
+              unprecedented zeal, our team is working in five different
+              verticals –
+            </h2>
+
+            <div className="flex pb-4 text-lg w-auto sm:2xl  justify-center animate-blink ">
+              <a
+                href="#first-about-card"
+                className="rounded shadow-xl   hover:shadow text-white px-2 py-1 bg-blue-500"
+              >
+                learn more
+              </a>
             </div>
+          </div>
+          <div
+            className="bg-white  py-[4rem] flex flex-wrap justify-center"
+            id="first-about-card"
+          >
+            <Card
+              title="Internship"
+              img={internshipImg}
+              hColor="#f97316"
+              description=" Find 10,000+ internships from great companies to give a
+                    kickstart to your career"
+            />
+            <Card
+              title="Trainings"
+              img={trainingImg}
+              hColor="#10b981"
+              description=" Get a real time experience in different fields with us . 
+              Got a sensation to learn something new or upskill yourself ?"
+            />
+            <Card
+              title="Capitals"
+              img={capitalImg}
+              hColor="#111827"
+              description=" step solution for your startup incubation .
+              Foundation- Helping Unprivileged  students gain access to education"
+            />
+            <Card
+              title="Foundation"
+              img={foundationImg}
+              hColor="#facc15"
+              description=" Get premium fresher jobs with a minimum CTC of 3LPA on your
+                    fingertips"
+            />
+            <Card
+              title="House Of Design"
+              hColor="#ef4444"
+              img={designImg}
+              description=" Add a flavor of design at your workplace or life"
+            />
+            <Card
+              title="Blogging"
+              img={policyImg}
+              description=" Have a Innate desire to write what you feel just pen it down with us"
+            />
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };

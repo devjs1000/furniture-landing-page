@@ -1,14 +1,14 @@
 export default () => {
   return (
-    <div className="container">
+    <blockquote className="container text-justify">
         <h1 className="privacy">Privacy Policy</h1>
-        <p className="privacyText">
+        <p className="privacyText ">
             This Privacy Policy applies to the online services offered by Xciteducation Worldwide at Xciteducation
             Worldwide , its subdomains and Xciteducation Worldwide’s app on Google Play Store. These are henceforth
             collectively known as Services.
         </p>
         <h2 className="overview">Overview</h2>
-        <p className="overviewText">
+        <p className="overviewText text-justify">
             We respect your privacy and strive to provide a safe, secure user experience. This privacy statement sets
             forth our online data collection and usage policies and practices. By using our services, you consent to the
             policies and practices described in this statement. Your data will be stored and processed on our servers
@@ -268,6 +268,6 @@ export default () => {
             address you have provided to us. You are advised to refer to this page to know about our latest Privacy
             Policy.
         </p>
-    </div>
+    </blockquote>
   );
 };
