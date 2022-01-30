@@ -6,6 +6,7 @@ import designImg from "../../img/design.svg";
 import policyImg from "../../img/terms.svg";
 import DialBox from "../components/DialBox";
 import Card from "../components/Card";
+import Team from '../pages/Team'
 export default () => {
   return (
     <>
@@ -87,6 +88,8 @@ export default () => {
             />
           </div>
         </div>
+        <h1 className="text-6xl font-bold text-center text-gray-700">Our Team</h1>
+        <Team />
       </section>
     </>
   );
