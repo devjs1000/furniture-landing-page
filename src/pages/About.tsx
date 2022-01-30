@@ -49,43 +49,41 @@ export default () => {
             id="first-about-card"
           >
             <Card
-              title="Internship"
+              title="Internships"
               img={internshipImg}
               hColor="#f97316"
-              description=" Find 10,000+ internships from great companies to give a
-                    kickstart to your career"
+              description="Get a real time experience in different fields with us ."
             />
             <Card
               title="Trainings"
               img={trainingImg}
               hColor="#10b981"
-              description=" Get a real time experience in different fields with us . 
-              Got a sensation to learn something new or upskill yourself ?"
+              description="  
+              Got a sensation to learn something new or upskill yourself ? Try us !"
             />
             <Card
               title="Capitals"
               img={capitalImg}
               hColor="#111827"
-              description=" step solution for your startup incubation .
-              Foundation- Helping Unprivileged  students gain access to education"
+              description="One-stop solution for your startup incubation .
+             "
             />
             <Card
-              title="Foundation"
+              title="Foundations"
               img={foundationImg}
               hColor="#facc15"
-              description=" Get premium fresher jobs with a minimum CTC of 3LPA on your
-                    fingertips"
+              description="  Helping Unprivileged  students gain access to education."
             />
             <Card
               title="House Of Design"
               hColor="#ef4444"
               img={designImg}
-              description=" Add a flavor of design at your workplace or life"
+              description=" Add a flavor of design at your workplace or life!"
             />
             <Card
               title="Blogging"
               img={policyImg}
-              description=" Have a Innate desire to write what you feel just pen it down with us"
+              description=" Have an Innate desire to write what you feel, just pen it down with us!"
             />
           </div>
         </div>
