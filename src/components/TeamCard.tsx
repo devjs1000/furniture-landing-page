@@ -3,11 +3,12 @@ export default (props: any) => {
 
   return (
     <>
-      <div className=" px-3 py-2 rounded-xl flex  bg-slate-100 w-[350px] shadow-md hover:shadow-lg cursor-pointer">
+      <div className=" px-3 py-2 my-2 rounded-xl flex  bg-slate-100 w-[350px] shadow-md hover:shadow-lg cursor-pointer">
         <img
           src={props.img}
           alt="training"
           className="w-[100px]  h-[100px] rounded-full"
+          loading="lazy"
         />
         <div>
           <h3

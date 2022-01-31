@@ -349,3 +349,7 @@ svg {
   padding-bottom: 5px;
 }
 
+.blurred{
+  background: linear-gradient(rgba(255, 255, 255, .3),rgba(255, 255, 255, .9), rgba(255, 255, 255, 1));
+  backdrop-filter: blur(1px);
+}
