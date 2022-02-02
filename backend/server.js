@@ -1,13 +1,16 @@
 import express from "express";
 import mongoose from "mongoose";
+import bodyParser from 'body-parser'
 import cors from "cors";
 import { config } from "dotenv";
-import user from "./routes/users.js";
+import user from "./routes/team.js";
 import userAuth from "./routes/userAuth.js";
 import cloudinary from "./utils/cloudinary.js";
+
 config();
 const app = express();
-
+const urlencodedParser=bodyParser.urlencoded({extended:false})
+app.use(urlencodedParser)
 const port = process.env.PORT || 8000;
 const uri = process.env.ATLAS_URI;
 console.log(uri);

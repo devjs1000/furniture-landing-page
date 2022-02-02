@@ -29,7 +29,7 @@ function App() {
         <Route path="/terms-and-conditions" element={<Terms />} />
         <Route path='/refund-policy' element={<Refund/>} />
         <Route path='/equal-opportunity' element={<Equal/>} />
-        <Route path='/admin' element={<Admin/>} />
+        <Route path='/admin/login' exact element={<Admin/>} />
 
       </Routes>
 

@@ -1,5 +1,5 @@
 import { Router } from "express";
-import User from "../models/user.model.js";
+import User from "../models/team.model.js";
 
 const routes = Router();
 routes.route("/data").get((req, res) => {
